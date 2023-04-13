@@ -10,33 +10,22 @@ using UnityEngine;
 
 public class animation : MonoBehaviour
 {
-    Animator m_Animator;
+    //Maak een variabele aan voor je animator component
+    private Animator ani;
+    private float speed = 0;
 
     void Start()
     {
-        //Get the Animator attached to the GameObject you are intending to animate.
-        m_Animator = gameObject.GetComponent<Animator>();
+        //Pak het animator component en sla die op in de variabele
+        ani = GetComponent<Animator>();
     }
-
     void Update()
     {
-        //Press the up arrow button to reset the trigger and set another one
-        if (Input.GetKey(KeyCode.W))
+        speed = -Input.GetAxis("Vertical");
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            //Reset the "Crouch" trigger
-            //m_Animator.ResetTrigger("walk");
-
-            //Send the message to the Animator to activate the trigger parameter named "Jump"
-            m_Animator.SetTrigger("walk");
+            speed *= 2;
         }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            //Reset the "Jump" trigger
-            //m_Animator.ResetTrigger("walk");
-
-            //Send the message to the Animator to activate the trigger parameter named "Crouch"
-            m_Animator.SetTrigger("stand");
-        }
+        ani.SetFloat("Speed", speed);
     }
 }
