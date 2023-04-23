@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Animator
+  m_Title: Console
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 141
+  controlID: 172
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimatorControllerTool
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -94,14 +94,14 @@ MonoBehaviour:
     y: 0
     width: 1268
     height: 618
-  m_MinSize: {x: 102, y: 121}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 140
+  controlID: 171
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 292
+  controlID: 48
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 293
+  controlID: 49
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 59
+  controlID: 134
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -443,14 +443,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.8527415
+    - e00: 1
       e01: 0
       e02: 0
-      e03: 233.64407
+      e03: 33
       e10: 0
-      e11: 0.8527415
+      e11: 1
       e12: 0
-      e13: 241.39793
+      e13: 149
       e20: 0
       e21: 0
       e22: 1
@@ -460,11 +460,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 0935692f2a185144a98345a752f2c8f3, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 1bfd1d85eadbe4e4ca10a6ce29a5c280, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -3242306285423442688, guid: 0935692f2a185144a98345a752f2c8f3, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
-  - m_Target: {fileID: 8610975372120428734, guid: 0935692f2a185144a98345a752f2c8f3, type: 2}
+  - m_Target: {fileID: 546938568619215270, guid: 1bfd1d85eadbe4e4ca10a6ce29a5c280, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -474,7 +472,7 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
-  m_CurrentEditor: 0
+  m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 --- !u!114 &17
@@ -508,9 +506,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ba5c0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 36fbffff48580000
+      m_SelectedIDs: 0ec6ffff
+      m_LastClickedID: -14834
+      m_ExpandedIDs: ecc2ffff0ec6ffff36fbffffaa580000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -792,9 +790,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 55.615128, y: 11.750729, z: 65.39382}
+    m_Target: {x: 53.10111, y: 9.38878, z: 71.93065}
     speed: 2
-    m_Value: {x: 55.615128, y: 11.750729, z: 65.39382}
+    m_Value: {x: 53.10111, y: 9.38878, z: 71.93065}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -841,13 +839,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.23474069, y: -0.18585199, z: 0.045769658, w: -0.95303214}
+    m_Target: {x: -0.26924384, y: -0.051104244, z: 0.014301516, w: -0.9616138}
     speed: 2
-    m_Value: {x: -0.23474069, y: -0.18585199, z: 0.045769654, w: -0.9530321}
+    m_Value: {x: -0.26922083, y: -0.05254636, z: 0.014705298, w: -0.9615316}
   m_Size:
-    m_Target: 1.0596746
+    m_Target: 7.772466
     speed: 2
-    m_Value: 1.0596746
+    m_Value: 7.772466
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1005,22 +1003,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/skins/Ninja/Animations
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/skins/Ninja/Animations
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ginos\OneDrive\Documenten\Prog-unity\Prog Les
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f05c0000
-    m_LastClickedID: 23792
-    m_ExpandedIDs: 00000000c25c0000c45c0000dc5c000000ca9a3b
+    m_SelectedIDs: d45c0000
+    m_LastClickedID: 23764
+    m_ExpandedIDs: 00000000c25c0000c45c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1076,7 +1074,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000d4570000d85b0000586b00008a570000bc580000fe1d00002e690000325a00009e570000ca5d000092570000d671000018580000245800005464000000000000f65c0000da580000f2580000
+    m_ExpandedInstanceIDs: c6230000d4570000d85b0000586b00008a570000bc580000fe1d00002e690000325a00009e570000ca5d000092570000d671000018580000245800005464000000000000f65c0000da580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1092,7 +1090,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 13}
+      m_ClientGUIView: {fileID: 4}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0

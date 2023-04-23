@@ -5,6 +5,8 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     public GameObject prefab;
+    public KeyCode shootKey = KeyCode.LeftControl;
+    public float Delay;
 
     // Start is called before the first frame update
     void Start()
@@ -12,15 +14,22 @@ public class Shoot : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(shootKey))
         {
-            GameObject ob = Instantiate(prefab);
-            ob.transform.position = transform.position;
-            ob.transform.rotation = transform.rotation;
-            Destroy(ob, 3f);
+            CallShot();
         }
+    }
+
+    public void CallShot()
+    {
+        StartCoroutine(AwaitDelay(delay));
+    }
+    private IEnumerator AwaitDelay(float time)
+    {
+        yield return new WaitForSeconds(time);
+        createProjectile();
     }
 }

@@ -16,22 +16,40 @@ public class KillonHit : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter(Collision coll)
     {
-        if (coll.gameObject.tag == targetTag)
-        {
-            GameObject expl = Instantiate(effect);
-            Destroy(expl, 2f);
-            Destroy(coll.gameObject, 0.1f);
-            audioSource.Play();
-        }
+        handleHit(coll.gameObject);
     }
     private void OnTriggerEnter(Collider coll)
     {
-        if (coll.gameObject.tag == targetTag)
+        handleHit(coll.gameObject);
+    }
+    private void handleHit(GameObject other)
+    {
+        if (other.tag == targetTag)
         {
             GameObject expl = Instantiate(effect);
+            expl.transform.position = other.transform.position;
             Destroy(expl, 2f);
-            Destroy(coll.gameObject, 0.1f);
-            audioSource.Play();
+            if (targetTag == "Player")
+            {
+                if (heartsScript == null)
+                {
+                    heartsScript = FindObjectOfType<Hearts>();
+                }
+                heartsScript.Lives--;
+                if (heartsScript.Lives == 0)
+                {
+                    Destroy(other, 0.1f);
+                }
+            }
+            else
+            {
+                Destroy(other, 0.1f);
+            }
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
         }
     }
+}
 }
